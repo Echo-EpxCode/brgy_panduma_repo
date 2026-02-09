@@ -25,7 +25,7 @@ $randomQuote = $quotes[array_rand($quotes)];
     <title>Barangay Panduma - Welcome</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="min-h-screen flex flex-col" style="background: linear-gradient(to right, #3097c7, #0369a1);">
+<body class="min-h-screen flex flex-col" style="background-image: url('brgy_panduma.png');">
 
     <!-- Header -->
     <header class="text-white py-6 shadow" style="background: linear-gradient(to right, #0a36ca, #0369a1);">

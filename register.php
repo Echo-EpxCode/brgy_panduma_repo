@@ -33,8 +33,7 @@ if (isset($_POST['register'])) {
     <title>Register</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="flex items-center justify-center h-screen" style="background: linear-gradient(to right, #0ea5e9, #0369a1);
-">
+<body class="min-h-screen flex items-center justify-center" style="background-image: url('brgy_panduma.png');">
 
 <div class="bg-white p-8 rounded-xl shadow-lg w-96">
 <h2 class="text-3xl font-bold text-center">CREATE ACCOUNT</h2>
