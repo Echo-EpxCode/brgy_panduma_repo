@@ -25,10 +25,10 @@ $randomQuote = $quotes[array_rand($quotes)];
     <title>Barangay Panduma - Welcome</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-green-50 min-h-screen flex flex-col">
+<body class="min-h-screen flex flex-col" style="background: linear-gradient(to right, #3097c7, #0369a1);">
 
     <!-- Header -->
-    <header class="bg-green-700 text-white py-6 shadow">
+    <header class="text-white py-6 shadow" style="background: linear-gradient(to right, #0a36ca, #0369a1);">
         <div class="container mx-auto text-center">
             <h1 class="text-3xl font-bold">
                 Barangay Panduma

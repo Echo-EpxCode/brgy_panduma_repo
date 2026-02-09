@@ -17,7 +17,8 @@ if (isset($_POST['register'])) {
                   VALUES ('$username', '$email', '$hashedPassword')";
 
         if (mysqli_query($conn, $query)) {
-            $message = "Registration successful!";
+            header("Location: index.php");
+            exit;
         } else {
             $message = "Error: " . mysqli_error($conn);
         }
@@ -32,12 +33,13 @@ if (isset($_POST['register'])) {
     <title>Register</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 flex items-center justify-center h-screen">
+<body class="flex items-center justify-center h-screen" style="background: linear-gradient(to right, #0ea5e9, #0369a1);
+">
 
 <div class="bg-white p-8 rounded-xl shadow-lg w-96">
-<h2 class="text-3xl font-bold text-center">BARANGAY PANDUMA</h2>
+<h2 class="text-3xl font-bold text-center">CREATE ACCOUNT</h2>
     <hr>
-    <h2 class="text-2xl font-bold mb-6 text-center">REGISTER</h2>
+    <br>
 
     <?php if ($message): ?>
         <div class="mb-4 text-sm text-red-500"><?= $message ?></div>
